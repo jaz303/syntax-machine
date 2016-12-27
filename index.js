@@ -5,7 +5,7 @@ const def = {
             skip: /^\s+/,
             tokens: [
                 {
-                    pattern: /^(int|float|char)/,
+                    pattern: /^(int|float|char|void|break|for|while|do)/,
                     actions: [
                         ['apply-class', 'keyword']
                     ]
@@ -17,16 +17,16 @@ const def = {
                     ]
                 },
                 {
-                    pattern: /^[\(\)\{\},\[\]]/,
-                    actions: []
-                },
-                {
                     pattern: /^"/,
                     actions: [
                         ['apply-class', 'string'],
                         ['enter-state', 'string']
                     ]
-                }
+                },
+                {
+                    pattern: /^[\(\)\{\},\[\];]/,
+                    actions: []
+                },
             ]
         },
         string: {
