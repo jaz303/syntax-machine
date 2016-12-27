@@ -89,8 +89,8 @@ function highlight(machine, src) {
                     }
                 }
                 if (!matched) {
-                    console.error("no match found");
-                    break;
+                    line = line.substr(1);
+                    pos++;
                 }
             }
         }

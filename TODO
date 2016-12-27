@@ -1,0 +1,8 @@
+[ ] Write a complete(-ish) syntax definition for C
+[ ] Add "apply-range" operator
+[ ] Modify engine so that it emits events rather than assembling output
+[ ] Test page (textarea + renderer)
+[ ] Store output state, intelligently re-color based on changed content
+[ ] Optimise line state storage to use e.g. packed arrays rather than objects
+[ ] Implement rainbow parentheses
+[ ] Bytecode compiler for syntax definitions
